@@ -1,0 +1,9 @@
+# Home Assistant runtime files
+config/.storage/
+config/*.log
+config/home-assistant_v2.db*
+config/.HA_RESTORE
+
+# OS metadata
+.DS_Store
+Thumbs.db

@@ -1,0 +1,26 @@
+# Home Assistant Configuration File
+# For documentation, see https://www.home-assistant.io/integrations/default_config/
+default_config:
+
+# Configuração de Proxy Reverso (Easypanel - Permite acessar por casa.oliani.com.br ou pelo link gerado pelo Easypanel)
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 172.16.0.0/12
+    - 10.0.0.0/8
+    - 192.168.0.0/16
+    - 127.0.0.1
+
+
+# Assistente de Voz / Comandos (Assist)
+conversation:
+
+# Load frontend themes if available
+frontend:
+  themes: !include_dir_merge_named themes
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+
+
