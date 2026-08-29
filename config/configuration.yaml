@@ -2,19 +2,6 @@
 # For documentation, see https://www.home-assistant.io/integrations/default_config/
 default_config:
 
-# Configuração de Proxy Reverso (Easypanel - Aceita conexões do Traefik)
-http:
-  use_x_forwarded_for: true
-  trusted_proxies:
-    - 172.16.0.0/12
-    - 172.17.0.0/16
-    - 172.18.0.0/16
-    - 10.0.0.0/8
-    - 192.168.0.0/16
-    - 127.0.0.1
-    - 0.0.0.0/0
-
-
 
 # Assistente de Voz / Comandos (Assist)
 conversation:
