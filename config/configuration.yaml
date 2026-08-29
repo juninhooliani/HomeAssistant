@@ -6,10 +6,12 @@ default_config:
 http:
   use_x_forwarded_for: true
   trusted_proxies:
-    - 10.0.0.0/8        # Cobre todas as redes Docker/Easypanel (10.x.x.x)
-    - 172.16.0.0/12     # Cobre redes Docker padrão e Traefik (172.16.x.x a 172.31.x.x)
-    - 192.168.0.0/16    # Cobre redes locais padrão (192.168.x.x)
-    - 127.0.0.1/32      # Localhost
+    - 10.11.0.52
+    - 10.0.0.0/8
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+    - 127.0.0.1
+    - 0.0.0.0/0
 
 # Assistente de Voz / Comandos (Assist)
 conversation:
